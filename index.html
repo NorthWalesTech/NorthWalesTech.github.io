@@ -1,34 +1,58 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-    <title>Free Bootstrap Theme for Developers</title>
+    <title>North Wales Dev Community</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">    
-    <link rel="shortcut icon" href="favicon.ico">  
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- Plugins CSS -->    
+    <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="assets/plugins/prism/prism.css">
-    <!-- Theme CSS -->  
+    <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head> 
+
+    <!-- mailchimp style -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    </style>
+
+    <style name="event-cards">
+        .evt-card {
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+
+          border: 1px solid #bcbcbc;
+
+          -webkit-box-shadow: 2px 3px 10px 0px rgba(153,147,153,1);
+          -moz-box-shadow: 2px 3px 10px 0px rgba(153,147,153,1);
+          box-shadow: 2px 3px 10px 0px rgba(153,147,153,1);
+        }
+
+        .event-heading {
+          margin-top: 35px;
+        }
+    </style>
+</head>
 
 <body data-spy="scroll">
-    
+
     <!---//Facebook button code-->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -38,15 +62,15 @@
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    
-    <!-- ******HEADER****** --> 
-    <header id="header" class="header">  
-        <div class="container">            
+
+    <!-- ******HEADER****** -->
+    <header id="header" class="header">
+        <div class="container">
             <h1 class="logo pull-left">
                 <a class="scrollto" href="#promo">
-                    <span class="logo-title">devAid</span>
+                    <span class="logo-title">North Wales Tech Community</span>
                 </a>
-            </h1><!--//logo-->              
+            </h1><!--//logo-->
             <nav id="main-nav" class="main-nav navbar-right" role="navigation">
                 <div class="navbar-header">
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
@@ -55,112 +79,113 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button><!--//nav-toggle-->
-                </div><!--//navbar-header-->            
+                </div><!--//navbar-header-->
                 <div class="navbar-collapse collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#features">Features</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#docs">Docs</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#license">License</a></li>                        
+                        <li class="nav-item"><a class="scrollto" href="#events">Events</a></li>
+                        <!-- <li class="nav-item"><a class="scrollto" href="#careers">Careers</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#business">Business</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#students">Students</a></li>-->
                         <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
             </nav><!--//main-nav-->
         </div>
     </header><!--//header-->
-    
+
     <!-- ******PROMO****** -->
     <section id="promo" class="promo section offset-header">
         <div class="container text-center">
-            <h2 class="title">dev<span class="highlight">Aid</span></h2>
-            <p class="intro">A free mobile-friendly Bootstrap theme designed to help developers
-promote their personal projects</p>
+            <h2 class="title">NorthWales<span class="highlight">Tech</span></h2>
+            <p class="intro">A community group to nurture<br>the IT & software dev scene in North Wales</p>
             <div class="btns">
-                <a class="btn btn-cta-secondary" href="http://themes.3rdwavemedia.com/" target="_blank">Demo</a>
-                <a class="btn btn-cta-primary" href="http://themes.3rdwavemedia.com/website-templates/devaid-free-bootstrap-theme-developers/" target="_blank">Download</a>
+                <a class="btn btn-cta-primary" role="button" data-target="#mcModal" data-toggle="modal"><i class="fa fa-envelope"></i> Subscribe</a>
+                <br>
+                <br>
+                <a class="btn btn-cta-primary" role="button" href="https://www.facebook.com/groups/NorthWalesTech/">&nbsp;&nbsp;<i class="fa fa-facebook"></i>&nbsp;&nbsp;Hangout</a>
+                <br>
+                <br>
+                <a class="btn btn-cta-secondary" role="button" href="https://surveyplanet.com/557eb9aab6c3673371782ec5">&nbsp;&nbsp;<i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Take our survey</a>
+
             </div>
             <ul class="meta list-inline">
-                <li><a href="#" target="_blank">View on GitHub</a></li>
-                <li><a href="https://github.com/twbs/bootstrap" target="_blank">Full Documentation</a></li>
-                <li>Created by: <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> at 3rd Wave Media</li>
+                <li><a href="#" class="mc-subscribe" target="_blank">Subscribe to the mailing list</a></li>
+                <!-- <li><a href="#" target="_blank">Find a job</a></li> -->
+                <li><a href="#events" target="_blank">Find an Event</li>
             </ul><!--//meta-->
         </div><!--//container-->
         <div class="social-media">
             <div class="social-media-inner container text-center">
                 <ul class="list-inline">
-                    <li class="twitter-follow"><a href="https://twitter.com/3rdwave_themes" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
+                    <li class="twitter-follow"><a href="https://twitter.com/northwalestech" class="twitter-follow-button" data-show-count="false">Follow @NorthWalesTech</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                     </li><!--//twitter-follow-->
                     <li class="twitter-tweet">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="3rdwave_themes" data-hashtags="bootstrap">Tweet</a>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="northwalestech" data-hashtags="northwalestech">Tweet</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                     </li><!--//twitter-tweet-->
                     <li class="facebook-like">
-                         <div class="fb-like" data-href="http://themes.3rdwavemedia.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                         <div class="fb-like" data-href="http://northwales.technology/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
                     </li><!--//facebook-like-->
-                    <!--// Generate github buttons: https://github.com/mdo/github-buttons -->
-                    <li class="github-star"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe></li>
-                    <li class="github-fork"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&repo=github-buttons&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe></li>
-                    <!--//
-                    <li class="github-follow"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&type=follow&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
-                    -->
                 </ul>
             </div>
         </div>
     </section><!--//promo-->
-    
-    <!-- ******ABOUT****** --> 
+
+    <!-- ******ABOUT****** -->
     <section id="about" class="about section">
         <div class="container">
-            <h2 class="title text-center">What is devAid?</h2>
-            <p class="intro text-center">Explain your project in detail. Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+            <h2 class="title text-center">What is NorthWales<span class="highlight">Tech</span>?</h2>
+            <p class="intro text-center">We're a bunch of like-minded people working in the IT and software development industries in North Wales.
+            <br>We'd like to see more stuff happening, so we've made this community to develop the following areas:</p>
             <div class="row">
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
-                        <i class="fa fa-heart"></i>
+                        <i class="fa fa-mortar-board"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">Designed for developers</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <h3 class="sub-title">Learn Stuff</h3>
+                        <p>We aim to pick up the baton for organising talks, presentations and meetups.<br><a href="#">Send us your ideas</a></p>
                     </div><!--//content-->
                 </div><!--//item-->
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
-                        <i class="fa fa-clock-o"></i>
+                        <i class="fa fa-money"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">Time saver</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <h3 class="sub-title">Jobs & Careers</h3>
+                        <p>Finding techy talent and job opportunities in North Wales is hard. Promote <strong>Jobs</strong> for job seekers; <strong>Talent</strong> for local companies.</p>
                     </div><!--//content-->
                 </div><!--//item-->
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
-                        <i class="fa fa-crosshairs"></i>
+                        <i class="fa fa-life-bouy"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">UX-centred</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <h3 class="sub-title">Experience</h3>
+                        <p>Students and graduates need experience. Help for students and graduates to get involved in the industry.</p>
                     </div><!--//content-->
-                </div><!--//item-->           
-                <div class="clearfix visible-md"></div>    
+                </div><!--//item-->
+
+                <div class="clearfix visible-md"></div>
+
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
-                        <i class="fa fa-tablet"></i>
+                        <i class="fa fa-picture-o"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">Mobile-friendly</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <h3 class="sub-title">Promote the Area</h3>
+                        <p>North Wales is pretty sweet yeah? Promote the area as a place to start a tech business or come to work.</p>
                     </div><!--//content-->
-                </div><!--//item-->                
+                </div><!--//item-->
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
-                        <i class="fa fa-code"></i>
+                        <i class="fa fa-star-o"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">Easy to customise</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <h3 class="sub-title">Promote Business</h3>
+                        <p>It's not all sheep. Promote the many tech businesses in North Wales to attact business and talent</p>
                     </div><!--//content-->
                 </div><!--//item-->
                 <div class="item col-md-4 col-sm-6 col-xs-12">
@@ -168,189 +193,288 @@ promote their personal projects</p>
                         <i class="fa fa-coffee"></i>
                     </div>
                     <div class="content">
-                        <h3 class="sub-title">LESS files included</h3>
-                        <p>Outline a benefit here. Tell users what your plugin/software can do for them. You can change the icon above to any of the 400+ <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a> icons available.</p>
+                        <h3 class="sub-title">Social Scene</h3>
+                        <p>Find people to collaborate with. Discover exciting and interesting technology in the area and share ideas.</p>
                     </div><!--//content-->
-                </div><!--//item-->               
-            </div><!--//row-->            
+                </div><!--//item-->
+            </div><!--//row-->
         </div><!--//container-->
     </section><!--//about-->
-    
-    <!-- ******FEATURES****** --> 
+
+    <!-- ******FEATURES****** -->
     <section id="features" class="features section">
-        <div class="container text-center">
-            <h2 class="title">Features</h2>
-            <ul class="feature-list list-unstyled">
-                <li><i class="fa fa-check"></i> Fully responsive</li>
-                <li><i class="fa fa-check"></i> HTML5 + CSS3</li>
-                <li><i class="fa fa-check"></i> Built on <a href="http://getbootstrap.com/" target="_blank">Bootstrap 3.3</a></li>
-                <li><i class="fa fa-check"></i> 400+ FontAwesome icons</li>
-                <li><i class="fa fa-check"></i> 4 colour schemes</li>
-                <li><i class="fa fa-check"></i> LESS files included</li>
-                <li><i class="fa fa-check"></i> Compatible with all modern browsers</li>
-            </ul>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-5 text-center" >
+                    <h2 class="title">Get Involved</h2>
+                    <div class="text-right">
+                        Firstly we need to know a little about you...
+                        <br>
+                        <a style="margin: 20px auto" class="btn btn-cta-secondary" href="https://surveyplanet.com/557eb9aab6c3673371782ec5"><i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Complete our boot-up survey</a>
+                        <br>
+                        but we'll always need the following...
+                        <ul class="feature-list list-unstyled">
+                            <li>Suggest ideas for meetups&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> </li>
+                            <li>Request topics for talks and speakers&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> </li>
+                            <li>Sponsor an event&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> </li>
+                            <li>List a job vacancy&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> </li>
+                            <li>Host an event&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> </li>
+                            <li>Give a presentation&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> </li>
+                            <li>List a student project&nbsp;&nbsp;<i class="fa fa-hand-o-right"></i> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-sm-offset-2">
+                  <h2 class="title">Current Goings on...</h2>
+                  <a class="twitter-timeline" href="https://twitter.com/northwalestech" data-widget-id="610940992133447682">Tweets by @northwalestech</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+
+            </div>
+
+
         </div><!--//container-->
     </section><!--//features-->
-    
-    <!-- ******DOCS****** --> 
-    <section id="docs" class="docs section">
+
+    <!-- ******DOCS****** -->
+    <section id="events" class="docs section">
         <div class="container">
             <div class="docs-inner">
-            <h2 class="title text-center">Get Started</h2>            
+            <h2 class="title text-center">What's Happening?</h2>
             <div class="block">
-                <h3 class="sub-title text-center">HTML</h3>
-                <p><a href="http://prismjs.com/" target="_blank">PrismJS</a> is used as the syntax highlighter here.</p>
-                <p>Below are the details of the custom PrismJS build used in this template. You can <a href="http://prismjs.com/download.html" target="_blank">build your own version</a> via their website should you need to.</p>
-                <ul class="list-unstyled">
-                    <li><strong>Compression level:</strong> Minified</li>
-                    <li><strong>Theme:</strong> Okaidia</li>
-                    <li><strong>Languages:</strong> Markup, CSS, C-like, JavaScript, PHP and Python</li>
-                </ul>
-                <div class="code-block">
-                    <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
-                    <pre><code class="language-markup">
-    &ltp class="my-style"&gt
-      Hello World!
-    &lt/p&gt
-                     </code></pre>
-                </div><!--//code-block-->
+                <h3 class="sub-title text-center">Chit Chat</h3>
+                <p>We have a facebook group for discussion: <a class="btn btn-info btn-sm" href=""><i class="fa fa-facebook"></i> Join us</a></p>
             </div><!--//block-->
-            
+
             <div class="block">
-                <h3 class="sub-title text-center">CSS</h3>
-                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
-                
-                <div class="code-block">
-                    <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
-                    <pre>
-    <code class="language-css">
-    /*   
-     * Template Name: devAid - Responsive Website Template for developers
-     * Version: 1.0
-     * Author: Xiaoying Riley at 3rd Wave Media
-     * Website: http://themes.3rdwavemedia.com/
-     * Twitter: @3rdwave_themes
-    */
-    body {
-      font-family: 'Lato', arial, sans-serif;
-      color: #444444;
-      font-size: 16px;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-    </code></pre>
-                </div><!--//code-block-->
-            </div><!--//block-->
-            
-            <div class="block">
-                <h3 class="sub-title text-center">JavaScript</h3>
-                <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit ligula eget dolor.</p>
-                <div class="code-block">
-                    <pre><code class="language-javascript">
-    if( awesome ){
-        console.log('This is Awesome');
-    }else{
-        $('body').addClass('give-me-awesome');
-    }
-                    </code></pre>
-                </div><!--//code-block-->
-            </div><!--//block-->   
-            <div class="block">
-                <h3 class="sub-title text-center">Full Documentation</h3>
-                <p>If your documentation is very long you can host the full docs page (including FAQ etc) on GitHub and provide a Call to Action button below to direct users there.</p>
-                <p class="text-center">
-                    <a class="btn btn-cta-primary" href="https://github.com/twbs/bootstrap" target="_blank">More on GitHub</a>
+                <h3 class="sub-title text-center">Talks, Presentations, Meetups</h3>
+                <h4 class="event-heading">Scheduled events</h4>
+                <span>nothing yet, give us a chance!</span>
+
+                <h4 class="event-heading">Proposed events</h4>
+
+                <div class="row evt-card">
+                  <div class="col-md-3">
+                    <h3><span class="label label-success"><i class="fa fa-calendar"></i>&nbsp;Jun 18th</span></h3>
+                  </div>
+                  <div class="col-md-6">
+                      <h5>#northwalestech - Event 0</h5>
+                      <strong>A pint and a chat about kicking off NWT</strong><br>
+                      <em>at Douglas Arms, Bethesda <a href="https://goo.gl/maps/MW9VP"><i class="fa fa-map-marker"></i></a></em><br>
+                      <span class="small">8:00 PM</span>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>
+                      <a class="btn btn-default" href="https://www.facebook.com/groups/NorthWalesTech/"><i class="fa fa-facebook"></i>&nbsp;Discuss</a>
+                    </h3>
+                  </div>
+                </div>
+
+                <h4 class="event-heading">Suggest an event!</h4>
+                <p>We'd like to attract speakers and industry experts to the area to give talks and presentations.</p>
+                <p>For this to happen we need the following:
+                    <ul>
+                        <li>Ideas of what themes and topics are of interest.</li>
+                        <li>Venues for hosting talks and meetups</li>
+                        <li>Sponsors, so we can cover the expenses of speakers</li>
+                   </ul>
                 </p>
+
+                <!--
+                <h4 class="event-heading">Past events</h4>
+                <span>nothing yet, give us a chance!</span>
+                 -->
+
             </div><!--//block-->
-            
-            </div><!--//docs-inner-->         
+
+
+
+            </div><!--//docs-inner-->
         </div><!--//container-->
     </section><!--//features-->
-    
-    <!-- ******LICENSE****** --> 
-    <section id="license" class="license section">
+
+    <!-- ******JOBS******
+    <section id="careers" class="docs section">
         <div class="container">
-            <div class="license-inner">
-            <h2 class="title text-center">License</h2>
-                <div class="info">
-                    <p>This Bootstrap theme is made by UX designer <a href="https://www.linkedin.com/in/xiaoying" target="_blank">Xiaoying Riley</a> at 3rd Wave Media for developers and is <strong>100% FREE</strong> under the <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License (CC BY 3.0)</a></p>
-                    <p><strong>[Tip for developers]:</strong> If your project is open source, you might want to put a <a href="https://www.paypal.com/us/cgi-bin/?cmd=_donate-intro-outside" target="_blank">PayPal "Donate" button</a> below so your users can express their gratitude. If your project is commercial, you can put a <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_singleitem-intro-outside" target="_blank">PayPal "Buy Now" button</a> instead.</p>
-                </div><!--//info-->
-                <div class="cta-container">
-                    <div class="speech-bubble">                    
-                        <p class="intro">If you are feeling generous and want to show your support to Xiaoying, you can buy her a beer or coffee via the PayPal donate button below. :)</p>
-                        <div class="icon-holder  text-center"><i class="fa fa-smile-o"></i></div>
-                    </div><!--//speech-bubble-->
-                    <div class="btn-container  text-center">
-                        <!--//You need to generate your own PayPal button - https://www.paypal.com/us/cgi-bin/?cmd=_donate-intro-outside -->         
-                        <!--PayPal generated code starts-->
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="Y46LJNXGAVVWW">
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-                        </form>
-                        <!--//PayPal generated code ends-->                    
-                        
-                    </div><!--//btn-container-->
-                </div><!--//cta-container-->
-            </div><!--//license-inner-->
-        </div><!--//container-->
-    </section><!--//how-->
-    
-    <!-- ******CONTACT****** --> 
+            <div class="docs-inner">
+            <h2 class="title text-center">Talent and Careers</h2>
+            <div class="block">
+                <h3 class="sub-title text-center">Find a job</h3>
+                <p>Finding tech businesses in North Wales is hard.
+                <br>We'll be be putting jobs and career opportunities on the website soon.
+                <br>In the meantime join our mailing list and tick the <em>careers</em> options to receive opportunities to your inbox</p>
+            </div>
+
+            <div class="block">
+                <h3 class="sub-title text-center">Find Talent for your business</h3>
+                <p>Finding tech-talent in North Wales is hard. </p>
+                <p>List a job or career opportunity here to reach our community</p>
+                <a class="btn btn-default btn-small" href="mailto:contactSNARFnorthwalesWARPtechnology">Contact Us <i class="fa fa-envelope"></i></a></p>
+            </div>
+
+
+
+            </div>
+        </div>
+    </section><!--//jobs-->
+
+    <!-- ******BIZ******
+    <section id="business" class="docs section">
+        <div class="container">
+            <div class="docs-inner">
+            <h2 class="title text-center">Promote your North Wales Business</h2>
+            <div class="block">
+                <h3 class="sub-title text-center">Business Profile</h3>
+                <p>We want to demonstrate to startups, investors and job seekers
+                    the diversity and strength of the IT and development industry in North Wales</p>
+                <p>We'll soon create a small profile for businesses of any size to promote themselves</p>
+
+            </div>
+
+            <div class="block">
+                <h3 class="sub-title text-center">Promote North Wales</h3>
+                <p>Together we can promote North Wales as somewhere to come and start a tech business, forge a career and enjoy life.</p>
+                <p>There's plenty of resources for businesses to grow, we could just do with some more people<p>
+            </div>
+
+            </div>
+        </div>
+    </section><!--//biz-->
+
+    <!-- ******STUDENT******
+    <section id="students" class="docs section">
+        <div class="container">
+            <div class="docs-inner">
+            <h2 class="title text-center">Nurturing the emerging talent</h2>
+            <div class="block">
+                <h3 class="sub-title text-center">Student or Graduate?</h3>
+                <p>Join our community and <a href="mailto:contactSNARFnorthwalesWARPtechnology">let us know</a> what you need to further your career in the technical professions.</p>
+                <p>We're excited to learn how the community can nurture talent grown right here in local universities and colleges to prepare them for a future with local tech companies.</p>
+
+            </div>
+
+            <div class="block">
+                <h3 class="sub-title text-center">Give a grad a chance!</h3>
+                <p>We all know that experience matters for employers.</p>
+                <p>Do you have any ideas on how graduates can gain experiences and stay in the area?<p>
+                <p>Drop us a line if you have any placements, internships or student projects, to provide really worthwhile experience for the emerging talent<p>
+            </div>
+
+            </div>
+        </div>
+    </section><!--//STUDENT-->
+
+
+
+
+
+
+    <!-- ******WHO****** -->
     <section id="contact" class="contact section has-pattern">
         <div class="container">
+
+            <div class="info text-center">
+                <h4 class="sub-title">Connect</h4>
+                <ul class="social-icons list-inline">
+                    <li><a href="https://twitter.com/northwalestech" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/groups/NorthWalesTech" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li class="last">
+                        <a href="mailto:contactSNARFnorthwalesWARPtechnology"><i class="fa fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+
             <div class="contact-inner">
-                <h2 class="title  text-center">Contact</h2>
-                <p class="intro  text-center">I hope you find this Bootstrap template useful. <br />Feel free to get in touch if you have any questions or suggestions.</p>
-                <div class="author-message">                      
-                    <div class="profile">
-                        <img class="img-responsive" src="assets/images/profile.png" alt="" />
-                    </div><!--//profile-->
-                    <div class="speech-bubble">
-                        <h3 class="sub-title">Want to get more freebies in the future?</h3>
-                        <p>I tweet about #UX and #webdev related resources/content at <a href="https://twitter.com/3rdwave_themes" target="_blank">@3rdwave_themes</a> 
-                        <p>If you like what I do, you can follow me on twitter and I will keep you informed about my next free template there :)</p>
-                        <p><strong>[Tip for developers]:</strong> If you take on freelance work you can put a tailored message here about your availability to attract potential clients. Be creative and good luck!</p> 
-                        <div class="source">
-                            <span class="name"><a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying Riley</a></span>
-                            <br />
-                            <span class="title">UX/UI Designer</span>
-                        </div><!--//source-->
-                    </div><!--//speech-bubble-->                        
-                </div><!--//author-message-->
-                <div class="clearfix"></div>
-                <div class="info text-center">
-                    <h4 class="sub-title">Get Connected</h4>
-                    <ul class="social-icons list-inline">
-                        <li><a href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.facebook.com/3rdwavethemes" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/xiaoying"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="http://instagram.com/xyriley"><i class="fa fa-instagram"></i></a></li>  
-                        <li><a href="https://dribbble.com/Xiaoying"><i class="fa fa-dribbble"></i></a></li>   
-                        <li class="last"><a href="mailto: hello@3rdwavemedia.com"><i class="fa fa-envelope"></i></a></li>              
-                    </ul>
-                </div><!--//info-->
+                <h2 class="title  text-center">Who are we</h2>
+                <p class="intro  text-center">We growing in number but currently:<br>Rob Shepherd (DataCymru), Carwyn Edwards (Bangor University), Sian Williams (Supertemp Specialst)</p>
+                <p class="intro  text-center">Want to help? <a href="mailto:contactSNARFnorthwalesWARPtechnology">Join us</a></p>
             </div><!--//contact-inner-->
         </div><!--//container-->
-    </section><!--//contact-->  
-      
-    <!-- ******FOOTER****** --> 
+    </section><!--//who-->
+
+    <!-- ******FOOTER****** -->
     <footer class="footer">
         <div class="container text-center">
-            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+            <small class="copyright">Theme from <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave (CC)</a></small>
         </div><!--//container-->
     </footer><!--//footer-->
-     
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
-    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
-    <script type="text/javascript" src="assets/js/main.js"></script>       
-</body>
-</html> 
 
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <!-- Begin MailChimp Signup Modal -->
+    <div id="mcModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Subscribe to our mailing list</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="mc_embed_signup">
+                        <form action="//technology.us10.list-manage.com/subscribe/post?u=3bf33913f5c058c75886ba73f&amp;id=51ce3758d4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                            <em>We won't pass your details on to any third parties</em>
+                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                        </label>
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME">First Name </label>
+                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-LNAME">Last Name </label>
+                            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                        </div>
+                        <div class="mc-field-group input-group">
+                            <strong>I'm interested in </strong>
+                            <ul><li><input type="checkbox" value="1" name="group[3501][1]" id="mce-group[3501]-3501-0"><label for="mce-group[3501]-3501-0">Career Opportunities</label></li>
+                        <li><input type="checkbox" value="2" name="group[3501][2]" id="mce-group[3501]-3501-1"><label for="mce-group[3501]-3501-1">Meetups &amp; Talks</label></li>
+                        <li><input type="checkbox" value="4" name="group[3501][4]" id="mce-group[3501]-3501-2"><label for="mce-group[3501]-3501-2">General News</label></li>
+                        </ul>
+                        </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_3bf33913f5c058c75886ba73f_51ce3758d4" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>
+        (function($) {
+                window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+    </script>
+
+
+    <script type="text/javascript">
+        $(function() {
+         $('a[href^="mailto:"]').each(function() {
+          this.href = this.href.replace('SNARF', '@').replace(/WARP/g, '.');
+         });
+        });
+    </script>
+</body>
+</html>
