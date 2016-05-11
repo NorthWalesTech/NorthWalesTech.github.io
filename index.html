@@ -101,19 +101,13 @@
             <h2 class="title">NorthWales<span class="highlight">Tech</span></h2>
             <p class="intro">A Technology and Developer Community<br>for North Wales</p>
             <div class="btns">
-                <a class="btn btn-cta-primary" role="button" data-target="#mcModal" data-toggle="modal"><i class="fa fa-envelope"></i> Subscribe</a>
+                <a class="btn btn-cta-primary" role="button" href="http://www.meetup.com/NorthWalesTech/"><i class="fa fa-calendar"></i> Events</a>
                 <br>
                 <br>
                 <a class="btn btn-cta-primary" role="button" href="https://www.facebook.com/groups/NorthWalesTech/">&nbsp;&nbsp;<i class="fa fa-facebook"></i>&nbsp;&nbsp;Hangout</a>
-                <br>
-                <br>
-                <a class="btn btn-cta-secondary" role="button" href="https://surveyplanet.com/557eb9aab6c3673371782ec5">&nbsp;&nbsp;<i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Take our survey</a>
 
             </div>
             <ul class="meta list-inline">
-                <li><a href="#" class="mc-subscribe" target="_blank">Subscribe to the mailing list</a></li>
-                <!-- <li><a href="#" target="_blank">Find a job</a></li> -->
-                <li><a href="#events" target="_blank">Find an Event</li>
             </ul><!--//meta-->
         </div><!--//container-->
         <div class="social-media">
@@ -140,6 +134,14 @@
             <h2 class="title text-center">What is NorthWales<span class="highlight">Tech</span>?</h2>
             <p class="intro text-center">We're a bunch of like-minded people working in the IT and software development industries in North Wales.
             <br>We'd like to see more stuff happening, so we've made this community to develop the following areas:</p>
+            
+            <div class="row" id="MeetupMembersRow">
+                <div id="Members" class="hidden">
+                    <h3> of us so far... <a href="http://www.meetup.com/NorthWalesTech/">Join Us <img id="mu" src="http://img1.meetupstatic.com/img/94156887029318281691566697/logo.svg"></a></h3>
+                    <div id="MeetupMembers"></div>
+                </div>
+            </div>
+            
             <div class="row">
                 <div class="item col-md-4 col-sm-6 col-xs-12">
                     <div class="icon-holder">
@@ -212,9 +214,8 @@
                 <div class="col-sm-5 text-center" >
                     <h2 class="title">Get Involved</h2>
                     <div class="text-right">
-                        Firstly we need to know a little about you...
+                        Come to our relaxed and informal meetups to learn and hang out with fellow techies.
                         <br>
-                        <a style="margin: 20px auto" class="btn btn-cta-secondary" href="https://surveyplanet.com/557eb9aab6c3673371782ec5"><i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Complete our boot-up survey</a>
                         <br>
                         but we'll always need the following...
                         <ul class="feature-list list-unstyled">
@@ -244,41 +245,25 @@
     <section id="events" class="docs section">
         <div class="container">
             <div class="docs-inner">
+            
             <h2 class="title text-center">What's Happening?</h2>
-
             <div class="block">
                 <h3 class="sub-title text-center">Talks, Presentations, Meetups</h3>
                 <!--<h4 class="event-heading">Scheduled events</h4>-->
-                <h4 class="event-heading">Upcoming Events</h4>
-                <div class="row evt-card">
-                  <div class="col-md-3">
-                    <h3><span class="label label-success"><i class="fa fa-calendar"></i>&nbsp;28th April 2016</span></h3>
-                  </div>
-                  <div class="col-md-6">
-                      <h5>Event 4: Hackers in Space</h5>
-                      <em>19:00 - 21:00 @ Pontio</em>
-                  </div>
-                  <div class="col-md-3">
-                    <h3>
-                      <a class="btn btn-default" href="http://www.meetup.com/NorthWalesTech/events/229998715/"><i class="fa fa-sign-in"></i>&nbsp;Signup</a>
-                    </h3>
-                  </div>
-                </div>
                 
-                <div class="row evt-card">
-                  <div class="col-md-3">
-                    <h3><span class="label label-success"><i class="fa fa-calendar"></i>&nbsp;29th April 2016</span></h3>
-                  </div>
-                  <div class="col-md-6">
-                      <h5>Event 4.1: Soldering is Easy Workshop</h5>
-                      <em>10:00 - 14:00 @ Pontio</em>
-                  </div>
-                  <div class="col-md-3">
-                    <h3>
-                      <a class="btn btn-default" href="http://www.meetup.com/NorthWalesTech/events/230368917/"><i class="fa fa-sign-in"></i>&nbsp;Signup</a>
-                    </h3>
-                  </div>
-                </div>
+                <div id="UpcomingEvents"></div>
+            </div>
+            
+            <h2 class="title text-center">What's Happened?</h2>
+            <div class="block">
+                <h3 class="sub-title text-center">Talks, Presentations, Meetups</h3>
+                <!--<h4 class="event-heading">Scheduled events</h4>-->
+                
+                <div id="PastEvents"></div>
+            </div>
+            
+            
+                
 
                 <h4 class="event-heading">Suggest an event!</h4>
                 <p>We'd like to attract speakers and industry experts to the area to give talks and presentations.</p>
@@ -477,5 +462,8 @@
          });
         });
     </script>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
